@@ -38,7 +38,7 @@ body {
 
 .countries {
   display: flex;
-  flex-basis: 70%;
+  flex-basis: 80%;
   flex-wrap: wrap;
   justify-content: center;
   margin: 40px 0;
@@ -47,10 +47,31 @@ body {
 .country {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
   margin: 5px;
-  width: 200px;
+  width: 300px;
   border: 2px solid rgb(234, 234, 233);
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.country .country__name {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.country .country__capital {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.country .country__image {
+  width: 100%;
 }
