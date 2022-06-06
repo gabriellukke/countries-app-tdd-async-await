@@ -1,7 +1,7 @@
 const countries = require('./countries');
 
 const ENDPOINTS = {
-  REGION: 'https://restcountries.com/v3.1/region/americas',
+  REGION: 'https://restcountries.com/v3.1/region/america',
 };
 
 const TIME_IN_MILLISECONDS = 200;

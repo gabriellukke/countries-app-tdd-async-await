@@ -22,3 +22,21 @@ const createCountryElement = (country) => {
 
   return section;
 };
+
+const renderCountries = async () => {
+  const countriesSection = document.querySelector('.countries');
+  try {
+    const countries = await fetchCountries();
+  
+    countries.forEach((country) => {
+      const countryCard = createCountryElement(country);
+      countriesSection.appendChild(countryCard);
+    })
+  } catch (error) {
+    countriesSection.innerHTML = `<h1>${error}</h1>`
+  }
+}
+
+window.onload = () => {
+  renderCountries();
+}
