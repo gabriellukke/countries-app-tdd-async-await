@@ -1,0 +1,7 @@
+# VSCode repo settings
+.vscode
+.DS_Store
+node_modules/
+cypress/reports
+cypress/screenshots
+coverage/
